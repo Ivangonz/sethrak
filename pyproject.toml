@@ -6,8 +6,12 @@ authors = ["Ivan Gonzalez Ibarra <ivan.gonzalez@liveviewtech.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+pyqt5 = "^5.15.2"
+taskw = "^1.3.0"
 
 [tool.poetry.dev-dependencies]
+invoke = "^1.5.0"
+yapf = "^0.30.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
