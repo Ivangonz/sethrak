@@ -1,5 +1,8 @@
-from PyQt5.QtWidgets import QLabel, QMainWindow
+from PyQt5.QtWidgets import QLabel, QMainWindow, QListWidget, QListWidgetItem, QBoxLayout
 from PyQt5.QtCore import Qt
+from taskw import TaskWarrior
+
+from .task_tabs import *
 
 
 # Subclass QMainWindow to customise your application's main window
@@ -8,14 +11,8 @@ class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
-        self.setWindowTitle("My Awesome App")
+        self.setWindowTitle("Sethrak - TaskWarrior")
+        self.setMinimumHeight(300)
 
-        label = QLabel("This is a PyQt5 window!")
-
-        # The `Qt` namespace has a lot of attributes to customise
-        # widgets. See: http://doc.qt.io/qt-5/qt.html
-        label.setAlignment(Qt.AlignCenter)
-
-        # Set the central widget of the Window. Widget will expand
-        # to take up all the space in the window by default.
-        self.setCentralWidget(label)
+        self.central_widget = PendingTasksTable()
+        self.setCentralWidget(self.central_widget)
