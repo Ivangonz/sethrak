@@ -8,6 +8,8 @@ authors = ["Ivan Gonzalez Ibarra <ivan.gonzalez@liveviewtech.com>"]
 python = "^3.8"
 pyqt5 = "^5.15.2"
 taskw = "^1.3.0"
+autoflake = "^1.4"
+qdarkstyle = "^2.8.1"
 
 [tool.poetry.dev-dependencies]
 invoke = "^1.5.0"

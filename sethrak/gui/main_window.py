@@ -1,7 +1,3 @@
-from PyQt5.QtWidgets import QLabel, QMainWindow, QListWidget, QListWidgetItem, QBoxLayout
-from PyQt5.QtCore import Qt
-from taskw import TaskWarrior
-
 from .task_tabs import *
 
 

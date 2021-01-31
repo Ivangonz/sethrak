@@ -1,9 +1,6 @@
-from typing import Dict, Any
-
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
 from taskw import TaskWarrior
-from datetime import datetime
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import QTableWidget, QAbstractScrollArea, QTableView, QTableWidgetItem
 
 
 class TableWidget(QTableWidget):
@@ -34,7 +31,12 @@ class PendingTasksTable(TableWidget):
 
         self.setColumnCount(5)
         self.setHorizontalHeaderLabels([
-            "TaskID", "Description", "Entered", "Modified", "Urgency"])
+            "TaskID",
+            "Description",
+            "Entered",
+            "Modified",
+            "Status",
+        ])
 
         self.show_items(self.get_pending())
 

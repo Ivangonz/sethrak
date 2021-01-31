@@ -1,3 +1,5 @@
+
+
 from invoke import task
 
 
@@ -31,7 +33,7 @@ def lint(c):
         ),
         (
             'Remove unused',
-            'autoflake -r --remove-all-unused-imports  --ignore-init-module-imports --remove-unused-variables --exclude scratch.py -i sethrak tasks tests setup.py',
+            'autoflake -r --remove-all-unused-imports  --ignore-init-module-imports --remove-unused-variables --exclude scratch.py -i sethrak tasks tests',
         ), (
             'Fix python format',
             'yapf -r -i -p sethrak tests',
