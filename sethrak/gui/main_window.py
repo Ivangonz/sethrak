@@ -1,4 +1,6 @@
-from .task_tabs import *
+from PyQt5.QtWidgets import QMainWindow
+
+from .table_widget import PendingTasksTable
 
 
 # Subclass QMainWindow to customise your application's main window

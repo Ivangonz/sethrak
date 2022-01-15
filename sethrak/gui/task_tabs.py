@@ -1,6 +1,7 @@
-from PyQt5.QtWidgets import *
+from taskw import TaskWarrior
+from PyQt5.QtWidgets import QWidget, QTabWidget
 
-from .table_widget import *
+from .table_widget import PendingTasksTable, CompletedTasksTable
 
 
 class TaskTabs(QWidget):

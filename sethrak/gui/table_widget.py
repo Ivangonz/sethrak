@@ -1,5 +1,10 @@
 from taskw import TaskWarrior
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import (
+    QTableView,
+    QTableWidget,
+    QTableWidgetItem,
+    QAbstractScrollArea,
+)
 
 
 class TableWidget(QTableWidget):

@@ -1,11 +1,13 @@
 import sys
 
 from PyQt5.QtGui import QIcon
-
-import breeze_resources
 from PyQt5.QtCore import QFile, QTextStream
-
-from PyQt5.QtWidgets import QApplication, QSystemTrayIcon, QAction, QMenu
+from PyQt5.QtWidgets import (
+    QMenu,
+    QAction,
+    QApplication,
+    QSystemTrayIcon,
+)
 from sethrak.gui.main_window import MainWindow
 
 

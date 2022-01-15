@@ -9,11 +9,13 @@ python = "^3.8"
 pyqt5 = "^5.15.2"
 taskw = "^1.3.0"
 autoflake = "^1.4"
-qdarkstyle = "^2.8.1"
+QDarkStyle = "^3.0.3"
 
 [tool.poetry.dev-dependencies]
 invoke = "^1.5.0"
-yapf = "^0.30.0"
+yapf = "^0.32.0"
+isort = "^5.10.1"
+toml = "^0.10.2"
 
 [build-system]
 requires = ["poetry>=0.12"]
