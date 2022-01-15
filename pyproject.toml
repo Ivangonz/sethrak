@@ -2,7 +2,7 @@
 name = "sethrak"
 version = "0.1.0"
 description = "PyQt GUI for TaskWarrior"
-authors = ["Ivan Gonzalez Ibarra <ivan.gonzalez@liveviewtech.com>"]
+authors = ["Ivan Gonzalez Ibarra <ivangonz@outlook.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
