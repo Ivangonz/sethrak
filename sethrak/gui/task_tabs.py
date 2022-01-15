@@ -1,10 +1,8 @@
-from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
 from .table_widget import *
 
 
-# noinspection PyArgumentList
 class TaskTabs(QWidget):
 
     def __init__(self):

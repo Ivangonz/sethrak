@@ -9,6 +9,5 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("Sethrak - TaskWarrior")
         self.setMinimumHeight(300)
-
         self.central_widget = PendingTasksTable()
         self.setCentralWidget(self.central_widget)
